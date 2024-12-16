@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:islamic_app/app_colors.dart';
 import 'package:islamic_app/tabs/hadith/hadith_tab.dart';
 import 'package:islamic_app/tabs/quran/quran_tab.dart';
 import 'package:islamic_app/tabs/radio/radio_tab.dart';
@@ -8,15 +7,14 @@ import 'package:islamic_app/tabs/time/time_tab.dart';
 import 'package:islamic_app/widget/builtItemInBottomNavBar.dart';
 
 class HomeScreen extends StatefulWidget {
-  static const String routName = 'home';
-  HomeScreen({super.key});
+  static const String routeName = 'home';
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int selectedIndex = 2;
+  int selectedIndex = 0;
   List<String> backGroundImg = [
     'assets/images/quran_bg.png',
     'assets/images/hadith_bg.png',
